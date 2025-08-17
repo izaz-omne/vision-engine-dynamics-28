@@ -92,7 +92,7 @@ const Work = () => {
                   </video>
                 ) : video.id === 2 ? (
                   <video 
-                    src="blob:https://www.linkedin.com/163690cb-3405-45bf-b30b-cae63a98984c"
+                    src="/lovable-uploads/1754934014356.mp4"
                     className="w-full aspect-video object-cover"
                     autoPlay
                     muted
@@ -100,7 +100,7 @@ const Work = () => {
                     controls
                     playsInline
                   >
-                    <source src="blob:https://www.linkedin.com/163690cb-3405-45bf-b30b-cae63a98984c" type="video/mp4" />
+                    <source src="/lovable-uploads/1754934014356.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
                 ) : (

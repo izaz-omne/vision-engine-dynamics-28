@@ -84,15 +84,18 @@ const Work = () => {
               <div className="relative bg-gradient-to-br from-primary/10 to-secondary/10 rounded-xl overflow-hidden shadow-card hover:shadow-glow transition-all duration-300 group-hover:scale-105">
                 {/* Video placeholder - user will replace with iframe */}
                 {video.id === 1 ? (
-                  <iframe 
-                    src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7361806339993485312?compact=1" 
-                    height="399" 
-                    width="100%" 
-                    frameBorder="0" 
-                    allowFullScreen 
-                    title="Embedded post"
-                    className="w-full aspect-video"
-                  />
+                  <video 
+                    src="https://dms.licdn.com/playlist/vid/v2/D4D10AQG1WsFFgSFF2Q/mp4-720p-30fp-crf28/B4DZipivfnGgCA-/0/1755191119041?e=1756033200&v=beta&t=9-DmXu0S1Z-Mv5ZIUXLv67RpV8-JWLXyMcHmmFvkhJc"
+                    className="w-full aspect-video object-cover"
+                    autoPlay
+                    muted
+                    loop
+                    controls
+                    playsInline
+                  >
+                    <source src="https://dms.licdn.com/playlist/vid/v2/D4D10AQG1WsFFgSFF2Q/mp4-720p-30fp-crf28/B4DZipivfnGgCA-/0/1755191119041?e=1756033200&v=beta&t=9-DmXu0S1Z-Mv5ZIUXLv67RpV8-JWLXyMcHmmFvkhJc" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
                 ) : (
                   <div className="aspect-video bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
                     <div className="bg-white/20 backdrop-blur-sm rounded-full p-4 group-hover:scale-110 transition-transform duration-300">

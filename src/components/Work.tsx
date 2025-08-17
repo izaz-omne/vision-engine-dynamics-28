@@ -97,7 +97,6 @@ const Work = () => {
                     autoPlay
                     muted
                     loop
-                    controls
                     playsInline
                   >
                     <source src="/lovable-uploads/1754934014356.mp4" type="video/mp4" />

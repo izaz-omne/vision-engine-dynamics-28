@@ -17,9 +17,9 @@ const Work = () => {
     },
     {
       id: 3,
-      title: "Autonomous Vehicle Integration",
-      description: "How leading automotive companies use Ultralytics for self-driving cars",
-      category: "Case Study"
+      title: "Real-time people counting with Ultralytics Solutions! 🔢",
+      description: "Track entries and exits with high accuracy using Ultralytics YOLO11 model, ideal for office spaces, public venues, and smart access systems.",
+      category: "People Analytics"
     },
     {
       id: 4,
@@ -101,6 +101,18 @@ const Work = () => {
                     <source src="/lovable-uploads/1754934014356.mp4" type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
+                ) : video.id === 3 ? (
+                  <video 
+                    src="https://dms.licdn.com/playlist/vid/v2/D4D10AQHdGhrd0Av4dQ/mp4-720p-30fp-crf28/B4DZh2Haj_GQBs-/0/1754328314998?e=2147483647&v=beta&t=C2kbEFCBOlnLI-Q5aD0zA6bDlRD13v8iaLt__tkPLx0"
+                    className="w-full aspect-video object-cover"
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                  >
+                    <source src="https://dms.licdn.com/playlist/vid/v2/D4D10AQHdGhrd0Av4dQ/mp4-720p-30fp-crf28/B4DZh2Haj_GQBs-/0/1754328314998?e=2147483647&v=beta&t=C2kbEFCBOlnLI-Q5aD0zA6bDlRD13v8iaLt__tkPLx0" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
                 ) : (
                   <div className="aspect-video bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
                     <div className="bg-white/20 backdrop-blur-sm rounded-full p-4 group-hover:scale-110 transition-transform duration-300">
@@ -127,7 +139,7 @@ const Work = () => {
               </div>
               
               {/* Note for manual iframe addition */}
-              {video.id !== 1 && video.id !== 2 && (
+              {video.id !== 1 && video.id !== 2 && video.id !== 3 && (
                 <div className="mt-2 text-center">
                   <span className="text-xs text-muted-foreground italic">
                     Video {video.id} - Replace with iframe

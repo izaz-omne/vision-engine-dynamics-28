@@ -84,7 +84,6 @@ const Work = () => {
                     autoPlay
                     muted
                     loop
-                    controls
                     playsInline
                   >
                     <source src="https://dms.licdn.com/playlist/vid/v2/D4D10AQG1WsFFgSFF2Q/mp4-720p-30fp-crf28/B4DZipivfnGgCA-/0/1755191119041?e=1756033200&v=beta&t=9-DmXu0S1Z-Mv5ZIUXLv67RpV8-JWLXyMcHmmFvkhJc" type="video/mp4" />

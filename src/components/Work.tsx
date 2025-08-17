@@ -11,9 +11,9 @@ const Work = () => {
     },
     {
       id: 2,
-      title: "Real-time Object Detection",
-      description: "See YOLO in action with live object detection capabilities",
-      category: "Live Demo"
+      title: "Real-time Fish Tracking with YOLO11! 🐟",
+      description: "Monitor aquatic environments using object tracking to detect and follow fish movement across frames, ideal for marine biology research, aquarium monitoring, and automated feeding systems.",
+      category: "Marine Biology"
     },
     {
       id: 3,
@@ -90,6 +90,19 @@ const Work = () => {
                     <source src="https://dms.licdn.com/playlist/vid/v2/D4D10AQG1WsFFgSFF2Q/mp4-720p-30fp-crf28/B4DZipivfnGgCA-/0/1755191119041?e=1756033200&v=beta&t=9-DmXu0S1Z-Mv5ZIUXLv67RpV8-JWLXyMcHmmFvkhJc" type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
+                ) : video.id === 2 ? (
+                  <video 
+                    src="blob:https://www.linkedin.com/163690cb-3405-45bf-b30b-cae63a98984c"
+                    className="w-full aspect-video object-cover"
+                    autoPlay
+                    muted
+                    loop
+                    controls
+                    playsInline
+                  >
+                    <source src="blob:https://www.linkedin.com/163690cb-3405-45bf-b30b-cae63a98984c" type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
                 ) : (
                   <div className="aspect-video bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
                     <div className="bg-white/20 backdrop-blur-sm rounded-full p-4 group-hover:scale-110 transition-transform duration-300">
@@ -116,7 +129,7 @@ const Work = () => {
               </div>
               
               {/* Note for manual iframe addition */}
-              {video.id !== 1 && (
+              {video.id !== 1 && video.id !== 2 && (
                 <div className="mt-2 text-center">
                   <span className="text-xs text-muted-foreground italic">
                     Video {video.id} - Replace with iframe

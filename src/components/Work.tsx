@@ -56,12 +56,6 @@ const Work = () => {
       title: "Sports Analytics",
       description: "Player tracking and performance analysis in professional sports",
       category: "Sports"
-    },
-    {
-      id: 10,
-      title: "Retail Innovation",
-      description: "Smart checkout and inventory management solutions",
-      category: "Retail"
     }
   ];
 

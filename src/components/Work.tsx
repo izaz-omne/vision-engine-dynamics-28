@@ -5,9 +5,9 @@ const Work = () => {
   const videoSections = [
     {
       id: 1,
-      title: "YOLO11 Launch Showcase",
-      description: "Introducing the latest breakthrough in computer vision technology",
-      category: "Product Demo"
+      title: "Detect Plastic Waste Underwater with YOLO11 🌊",
+      description: "Advanced object detection for identifying plastic bottles, bags, and debris in aquatic environments, enabling smarter marine conservation efforts.",
+      category: "Environmental AI"
     },
     {
       id: 2,
@@ -83,11 +83,23 @@ const Work = () => {
             <div key={video.id} className="group cursor-pointer">
               <div className="relative bg-gradient-to-br from-primary/10 to-secondary/10 rounded-xl overflow-hidden shadow-card hover:shadow-glow transition-all duration-300 group-hover:scale-105">
                 {/* Video placeholder - user will replace with iframe */}
-                <div className="aspect-video bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
-                  <div className="bg-white/20 backdrop-blur-sm rounded-full p-4 group-hover:scale-110 transition-transform duration-300">
-                    <Play className="h-8 w-8 text-white" fill="currentColor" />
+                {video.id === 1 ? (
+                  <iframe 
+                    src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7361806339993485312?compact=1" 
+                    height="399" 
+                    width="100%" 
+                    frameBorder="0" 
+                    allowFullScreen 
+                    title="Embedded post"
+                    className="w-full aspect-video"
+                  />
+                ) : (
+                  <div className="aspect-video bg-gradient-to-br from-primary to-secondary flex items-center justify-center">
+                    <div className="bg-white/20 backdrop-blur-sm rounded-full p-4 group-hover:scale-110 transition-transform duration-300">
+                      <Play className="h-8 w-8 text-white" fill="currentColor" />
+                    </div>
                   </div>
-                </div>
+                )}
                 
                 {/* Video info */}
                 <div className="p-6">
@@ -107,11 +119,13 @@ const Work = () => {
               </div>
               
               {/* Note for manual iframe addition */}
-              <div className="mt-2 text-center">
-                <span className="text-xs text-muted-foreground italic">
-                  Video {video.id} - Replace with iframe
-                </span>
-              </div>
+              {video.id !== 1 && (
+                <div className="mt-2 text-center">
+                  <span className="text-xs text-muted-foreground italic">
+                    Video {video.id} - Replace with iframe
+                  </span>
+                </div>
+              )}
             </div>
           ))}
         </div>
